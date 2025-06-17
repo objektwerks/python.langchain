@@ -12,6 +12,8 @@ def main():
 
     llm = OpenAI(model_name=modelName)
 
+    prompt = "Write a story about a pizza."
+
 
 if __name__ == "__main__":
     main()
