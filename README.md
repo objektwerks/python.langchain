@@ -18,7 +18,7 @@ Ruff
 
 Run
 ---
-1. uv run main.py
+1. uv run main.py [beer style]
 
 Resources
 ---------
