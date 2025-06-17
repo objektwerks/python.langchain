@@ -4,7 +4,7 @@ Python LangChain
 
 Warning
 -------
->Avoid this library at all costs!
+>Langchain is truly a ***piece of work!*** ;)
 
 Install
 -------
