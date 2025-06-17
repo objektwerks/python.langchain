@@ -14,6 +14,7 @@ def main():
 
     prompt = "Write a story about a pizza."
 
+    chain = LLMChain(llm=llm, prompt=prompt)
 
 if __name__ == "__main__":
     main()
