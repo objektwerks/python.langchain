@@ -8,17 +8,18 @@ Warning
 
 Install
 -------
-1. uv add langchain langchain-openai
-2. uv add --dev ruff
+1. ```uv add langchain langchain-openai```
+2. ```uv add --dev ruff```
 
 Ruff
 ----
-1. uvx ruff format
-2. uvx ruff check
+1. ```uvx ruff format```
+2. ```uvx ruff check```
 
 Run
 ---
-1. uv run main.py [beer style]
+1. ```uv run main.py [beer style]```
+>Must use a single word beer style, such as: ```uv run main.py PaleAle```
 
 Resources
 ---------
