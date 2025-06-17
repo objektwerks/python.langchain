@@ -1,4 +1,4 @@
-from langchain import OpenAI
+from langchain_openai import OpenAI
 from langchain.chains import LLMChain
 
 import os
@@ -8,7 +8,7 @@ def main():
     apiKey: str | None = os.getenv("OPENAI_API_KEY")
     assert apiKey, "*** Require OpenAI api key!"
 
-    llm: OpenAI = OpenAI(model_name="text-davinci-003")
+    llm: OpenAI = OpenAI()
 
     prompt: str = "Write a story about a pizza."
     print(f"*** Request: {prompt}")
