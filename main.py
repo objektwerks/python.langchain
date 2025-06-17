@@ -1,6 +1,6 @@
 from langchain.chains import LLMChain
-from langchain_community.llms import OpenAI
 
+from openai import OpenAI
 import os
 
 
