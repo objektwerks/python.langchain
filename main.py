@@ -20,7 +20,7 @@ def main():
 
     topic: str = "Indian Pale Ale"
     print(f"*** Topic: {topic}")
-    
+
     response: str = chain.invoke({"topic": topic})
     print(f"*** Response: {response}")
 
