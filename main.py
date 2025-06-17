@@ -11,7 +11,7 @@ def main():
     assert apiKey, "*** Require OpenAI api key!"
 
     prompt: ChatPromptTemplate = ChatPromptTemplate.from_template(
-        "Tell me about his beer style {topic}"
+        "Tell me about this beer style {topic}"
     )
 
     model: ChatOpenAI = ChatOpenAI(model="gpt-4o-mini")
