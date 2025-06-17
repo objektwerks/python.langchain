@@ -10,15 +10,18 @@ def main():
     apiKey: str | None = os.getenv("OPENAI_API_KEY")
     assert apiKey, "*** Require OpenAI api key!"
 
-    prompt: ChatPromptTemplate = ChatPromptTemplate.from_template(
-        "Tell me about this beer style {topic}"
-    )
+    request: str = "Tell me about this beer style {topic}"
+    print(f"*** Request: {request}")
+    prompt: ChatPromptTemplate = ChatPromptTemplate.from_template(request)
 
     model: ChatOpenAI = ChatOpenAI(model="gpt-4o-mini")
 
     chain: RunnableSerializable = prompt | model | StrOutputParser()
 
-    response: str = chain.invoke({"topic": "Indian Pale Ale"})
+    topic: str = "Indian Pale Ale"
+    print(f"*** Topic: {topic}")
+    
+    response: str = chain.invoke({"topic": topic})
     print(f"*** Response: {response}")
 
 
