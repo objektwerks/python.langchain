@@ -8,7 +8,7 @@ Warning
 
 Install
 -------
-1. uv add langchain openai
+1. uv add langchain langchain-openai
 2. uv add --dev ruff
 
 Ruff
