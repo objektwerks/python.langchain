@@ -2,10 +2,6 @@ Python LangChain
 ----------------
 >Python LangChain beer style app using OpenAI.
 
-Warning
--------
->Langchain is truly a ***piece of work!*** ;)
-
 Install
 -------
 1. ```uv add langchain langchain-openai```
