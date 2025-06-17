@@ -1,6 +1,6 @@
 Python LangChain
 ----------------
->Python LangChain app using OpenAI.
+>Python LangChain beer style app using OpenAI.
 
 Warning
 -------
