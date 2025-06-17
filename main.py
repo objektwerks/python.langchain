@@ -12,6 +12,7 @@ def main():
 
     request: str = "Tell me about this beer style {topic}"
     print(f"*** Request: {request}")
+    
     prompt: ChatPromptTemplate = ChatPromptTemplate.from_template(request)
 
     model: ChatOpenAI = ChatOpenAI(model="gpt-4o-mini")
