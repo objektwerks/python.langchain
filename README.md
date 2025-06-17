@@ -1,6 +1,6 @@
 Python LangChain
 ----------------
->LangChain app using OpenAI.
+>Python LangChain app using OpenAI.
 
 Warning
 -------
