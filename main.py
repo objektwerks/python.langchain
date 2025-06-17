@@ -5,13 +5,10 @@ import os
 
 
 def main():
-    apiKey = os.getenv("OPENAI_API_KEY")
-    print(f"*** OpenAI api key: {apiKey}")
+    apiKey: str | None = os.getenv("OPENAI_API_KEY")
+    assert apiKey, "*** Require OpenAI api key!"
 
-    modelName = "text-davinci-003"
-    print(f"*** OpenAI model name: {modelName}")
-
-    llm = OpenAI(model_name=modelName)
+    llm = OpenAI(model_name="text-davinci-003")
 
     prompt = "Write a story about a pizza."
     print(f"*** Request: {prompt}")
