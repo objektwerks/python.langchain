@@ -8,14 +8,14 @@ def main():
     apiKey: str | None = os.getenv("OPENAI_API_KEY")
     assert apiKey, "*** Require OpenAI api key!"
 
-    llm = OpenAI(model_name="text-davinci-003")
+    llm: OpenAI = OpenAI(model_name="text-davinci-003")
 
-    prompt = "Write a story about a pizza."
+    prompt: str = "Write a story about a pizza."
     print(f"*** Request: {prompt}")
 
-    chain = LLMChain(llm=llm, prompt=prompt)
+    chain: LLMChain = LLMChain(llm=llm, prompt=prompt)
 
-    response = chain.run()
+    response: str = chain.run()
     print(f"*** Response: {response}")
 
 
