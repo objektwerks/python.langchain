@@ -5,7 +5,8 @@ Python LangChain
 Install
 -------
 1. uv add langchain
-2. uv add --dev ruff
+2. uv add langchain-openai
+3. uv add --dev ruff
 
 Ruff
 ----
