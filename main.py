@@ -10,7 +10,7 @@ def main():
     apiKey: str | None = os.getenv("OPENAI_API_KEY")
     assert apiKey, "*** Require OpenAI api key!"
 
-    request: str = "Tell me about this beer style {topic}"
+    request: str = "Tell me about this beer style, {topic}"
     print(f"*** Request: {request}")
     
     prompt: ChatPromptTemplate = ChatPromptTemplate.from_template(request)
