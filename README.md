@@ -6,7 +6,8 @@ Install
 -------
 1. uv add langchain
 2. uv add langchain-openai
-3. uv add --dev ruff
+3. uv add langchain-community
+4. uv add --dev ruff
 
 Ruff
 ----
