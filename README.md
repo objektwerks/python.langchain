@@ -1,6 +1,6 @@
 Python LangChain
 ----------------
->LangChain app.
+>LangChain app using OpenAI.
 
 Install
 -------
