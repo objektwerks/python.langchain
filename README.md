@@ -2,6 +2,10 @@ Python LangChain
 ----------------
 >LangChain app using OpenAI.
 
+Warning
+-------
+>Avoid this library at all costs!
+
 Install
 -------
 1. uv add langchain openai
