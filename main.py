@@ -5,8 +5,9 @@ from langchain_openai import ChatOpenAI
 
 import os
 
+import sys
 
-def main():
+def main(topic: str):
     apiKey: str | None = os.getenv("OPENAI_API_KEY")
     assert apiKey, "*** Require OpenAI api key!"
 
@@ -19,7 +20,7 @@ def main():
 
     chain: RunnableSerializable = prompt | model | StrOutputParser()
 
-    topic: str = "Indian Pale Ale"
+    #topic: str = "Indian Pale Ale"
     print(f"*** Topic: {topic}")
 
     response: str = chain.invoke({"topic": topic})
@@ -27,4 +28,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) < 2:
+        main("Indian Pale Ale")
+    else:
+        main(sys.argv[1])
