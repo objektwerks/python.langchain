@@ -20,7 +20,6 @@ def main(topic: str):
 
     chain: RunnableSerializable = prompt | model | StrOutputParser()
 
-    #topic: str = "Indian Pale Ale"
     print(f"*** Topic: {topic}")
 
     response: str = chain.invoke({"topic": topic})
