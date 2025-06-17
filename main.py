@@ -1,5 +1,7 @@
-from langchain_openai import OpenAI
-from langchain.chains import LLMChain
+from langchain_core.runnables import RunnableSerializable
+from langchain_openai import ChatOpenAI
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
 
 import os
 
@@ -8,14 +10,15 @@ def main():
     apiKey: str | None = os.getenv("OPENAI_API_KEY")
     assert apiKey, "*** Require OpenAI api key!"
 
-    llm: OpenAI = OpenAI()
+    model: ChatOpenAI = ChatOpenAI(model="gpt-4o-mini")
 
-    prompt: str = "Write a story about a pizza."
-    print(f"*** Request: {prompt}")
+    prompt: ChatPromptTemplate = ChatPromptTemplate.from_template(
+        "Tell me about his beer style {topic}"
+    )
 
-    chain: LLMChain = LLMChain(llm=llm, prompt=prompt)
+    chain: RunnableSerializable = prompt | model | StrOutputParser()
 
-    response: str = chain.run()
+    response: str = chain.invoke({"topic": "Indian Pale Ale"})
     print(f"*** Response: {response}")
 
 
