@@ -2,6 +2,10 @@ Python LangChain
 ----------------
 >Python LangChain beer style app using OpenAI.
 
+OpenAI
+------
+>Obtain an OpenAI API key from OpenAI. Then create an environment variable: export OPENAI_API_KEY="key-value"
+
 Install
 -------
 1. ```uv add langchain langchain-openai```
