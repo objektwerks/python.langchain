@@ -4,7 +4,9 @@ Python LangChain
 
 OpenAI
 ------
->Obtain an OpenAI API key from OpenAI. Then create an environment variable: export OPENAI_API_KEY="key-value"
+>Obtain an OpenAI API key from OpenAI.
+
+>Then create an environment variable: export OPENAI_API_KEY="key-value"
 
 Install
 -------
