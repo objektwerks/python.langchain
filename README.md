@@ -23,7 +23,7 @@ Run
 1. ```uv run main.py```
 >or:
 1. ```uv run main.py Pilsner```
->For now, **must** use a single word beer style, such as: ```uv run main.py PaleAle```
+>A single word beer style **must** be used, such as: ```uv run main.py PaleAle```
 
 Resources
 ---------
